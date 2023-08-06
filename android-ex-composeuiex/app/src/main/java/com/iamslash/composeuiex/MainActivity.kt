@@ -38,15 +38,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.iamslash.composeuiex.ui.theme.BasicsCodelabTheme
+import com.iamslash.composeuiex.ui.theme.ComposeUiExTheme
 import com.iamslash.compuseuiex.R
-import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            BasicsCodelabTheme {
+            ComposeUiExTheme {
                 MyApp(modifier = Modifier.fillMaxSize())
             }
         }
@@ -76,7 +75,7 @@ fun OnboardingScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Welcome to the Basics Codelab!")
+        Text("Welcome to the ComposeUiEx!")
         Button(
             modifier = Modifier.padding(vertical = 24.dp),
             onClick = onContinueClicked
@@ -164,7 +163,7 @@ private fun CardContent(name: String) {
 @Preview(showBackground = true, widthDp = 320)
 @Composable
 fun DefaultPreview() {
-    BasicsCodelabTheme {
+    ComposeUiExTheme {
         Greetings()
     }
 }
@@ -172,7 +171,7 @@ fun DefaultPreview() {
 @Preview(showBackground = true, widthDp = 320, heightDp = 320)
 @Composable
 fun OnboardingPreview() {
-    BasicsCodelabTheme {
+    ComposeUiExTheme {
         OnboardingScreen(onContinueClicked = {})
     }
 }
@@ -180,7 +179,7 @@ fun OnboardingPreview() {
 @Preview
 @Composable
 fun MyAppPreview() {
-    BasicsCodelabTheme {
+    ComposeUiExTheme {
         MyApp(Modifier.fillMaxSize())
     }
 }

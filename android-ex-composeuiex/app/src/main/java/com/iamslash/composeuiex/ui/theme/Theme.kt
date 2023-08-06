@@ -32,7 +32,7 @@ private val LightColorScheme = lightColorScheme(
 
 @Suppress("DEPRECATION")
 @Composable
-fun BasicsCodelabTheme(
+fun ComposeUiExTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
