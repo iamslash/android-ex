@@ -13,5 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "composeuiex"
+rootProject.name = "ComposeUiEx"
 include(":app")
+ 
